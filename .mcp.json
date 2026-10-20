@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "fal": {
+      "type": "http",
+      "url": "https://mcp.fal.ai/mcp-relay",
+      "note": "Official fal hosted MCP server (Streamable HTTP, OAuth 2.1 with PKCE and dynamic client registration). On first use the user signs in to fal in the browser; no API key is pasted. Main tools: recommend_model, search_models, browse_models, get_model_schema, get_pricing, estimate_cost, upload_file, run_model, submit_job, submit_jobs, check_job, wait_for_jobs, get_job_result, cancel_job, show_media, search_docs, plus fal Library tools for saved assets, collections and smart entities."
+    }
+  }
+}

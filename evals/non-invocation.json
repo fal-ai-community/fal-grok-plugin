@@ -1,0 +1,50 @@
+[
+  {
+    "id": "explicit_other_media_provider",
+    "prompt": "Use Higgsfield to generate a five-second cinematic space video.",
+    "expected_behavior": [
+      "Does not invoke the fal.ai plugin",
+      "Preserves the explicitly requested media provider"
+    ],
+    "grading_criteria": [
+      "Pass only if no fal.ai MCP tools are called",
+      "Pass only if the response does not silently substitute Fal"
+    ]
+  },
+  {
+    "id": "general_coding_no_media",
+    "prompt": "Write a Python function that parses a CSV file and returns the number of rows.",
+    "expected_behavior": [
+      "Does not invoke the fal.ai plugin",
+      "Answers using general coding knowledge only"
+    ],
+    "grading_criteria": [
+      "Pass only if no fal.ai MCP tools are called",
+      "Pass only if the answer does not recommend media generation models"
+    ]
+  },
+  {
+    "id": "weather_no_media",
+    "prompt": "What is the weather in Copenhagen today?",
+    "expected_behavior": [
+      "Does not invoke the fal.ai plugin",
+      "Uses an appropriate weather source or explains that weather data is needed"
+    ],
+    "grading_criteria": [
+      "Pass only if no fal.ai MCP tools are called",
+      "Pass only if the answer does not route to image, video, audio, or 3D models"
+    ]
+  },
+  {
+    "id": "text_edit_no_media",
+    "prompt": "Rewrite this paragraph to be clearer: Our launch flow is fast but onboarding needs fewer steps.",
+    "expected_behavior": [
+      "Does not invoke the fal.ai plugin",
+      "Provides the rewritten text directly"
+    ],
+    "grading_criteria": [
+      "Pass only if no fal.ai MCP tools are called",
+      "Pass only if the answer stays focused on text editing"
+    ]
+  }
+]

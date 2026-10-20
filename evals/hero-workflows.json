@@ -1,0 +1,146 @@
+[
+  {
+    "id": "named_h3_max_exact_routing",
+    "prompt": "Generate a five-second 16:9 cinematic space video with H3 Max.",
+    "expected_tool_path": [
+      "search_models",
+      "get_model_schema",
+      "get_pricing",
+      "submit_job",
+      "check_job",
+      "get_job_result"
+    ],
+    "required_behavior": [
+      "Searches fal.ai for the exact MiniMax H3 Max endpoint before execution",
+      "Does not treat an approximate model label from another provider as an exact match",
+      "Returns endpoint_id, request_id, and video URL"
+    ]
+  },
+  {
+    "id": "image_default_generation",
+    "prompt": "Use fal to generate a premium product hero image of a matte black water bottle on a clean studio background.",
+    "expected_tool_path": [
+      "recommend_model",
+      "get_model_schema",
+      "get_pricing",
+      "run_model"
+    ],
+    "required_behavior": [
+      "Selects a still image endpoint suitable for commercial product imagery",
+      "Does not invent schema fields",
+      "Returns endpoint_id, request_id, and image URL"
+    ]
+  },
+  {
+    "id": "product_photo_from_reference",
+    "prompt": "Create a product photo from this reference image URL and keep the packaging unchanged: https://example.com/product.png",
+    "expected_tool_path": [
+      "recommend_model",
+      "get_model_schema",
+      "upload_file",
+      "run_model"
+    ],
+    "required_behavior": [
+      "Uses an image edit or product-faithful endpoint",
+      "Preserves product packaging and does not add fake text",
+      "Returns final image URL and notes product fidelity constraints"
+    ]
+  },
+  {
+    "id": "image_to_video_async",
+    "prompt": "Animate this product image into a 6 second vertical product reveal video: https://example.com/hero.png",
+    "expected_tool_path": [
+      "recommend_model",
+      "get_model_schema",
+      "get_pricing",
+      "upload_file",
+      "submit_job",
+      "check_job",
+      "get_job_result"
+    ],
+    "required_behavior": [
+      "Uses async queue flow instead of long synchronous polling",
+      "Includes motion-specific prompt details",
+      "Returns endpoint_id, request_id, and video URL"
+    ]
+  },
+  {
+    "id": "ugc_talking_head",
+    "prompt": "Make a short UGC talking-head video from this portrait and this script: 'I use this every morning because it saves me time.' Portrait: https://example.com/person.jpg",
+    "expected_tool_path": [
+      "recommend_model",
+      "get_model_schema",
+      "get_pricing",
+      "upload_file",
+      "submit_job",
+      "check_job",
+      "get_job_result"
+    ],
+    "required_behavior": [
+      "Chooses a talking-head or lip-sync endpoint",
+      "Does not invent claims beyond the provided script",
+      "Uses async queue flow and returns video URL"
+    ]
+  },
+  {
+    "id": "restore_and_upscale",
+    "prompt": "Restore and upscale this old blurry image: https://example.com/old-photo.jpg",
+    "expected_tool_path": [
+      "recommend_model",
+      "search_models",
+      "get_model_schema",
+      "upload_file",
+      "run_model"
+    ],
+    "required_behavior": [
+      "Finds a restoration, face-fix, deblur, or upscale endpoint",
+      "Preserves identity and original content",
+      "Returns restored image URL"
+    ]
+  },
+  {
+    "id": "training_requires_confirmation",
+    "prompt": "Train a LoRA from this dataset archive: https://example.com/dataset.zip",
+    "expected_tool_path": [
+      "recommend_model",
+      "search_models",
+      "get_model_schema",
+      "get_pricing"
+    ],
+    "required_behavior": [
+      "Checks pricing before training",
+      "Confirms required dataset fields",
+      "Asks for confirmation before starting if the user has not explicitly approved cost/long-running execution"
+    ]
+  },
+  {
+    "id": "three_d_asset_async",
+    "prompt": "Turn this concept image into a 3D asset: https://example.com/concept.png",
+    "expected_tool_path": [
+      "recommend_model",
+      "search_models",
+      "get_model_schema",
+      "get_pricing",
+      "upload_file",
+      "submit_job",
+      "check_job",
+      "get_job_result"
+    ],
+    "required_behavior": [
+      "Uses a 3D endpoint",
+      "Uses async queue flow",
+      "Returns asset URLs and output format when available"
+    ]
+  },
+  {
+    "id": "cancel_requires_explicit_request",
+    "prompt": "What's the status of request abc123 for fal-ai/example-model?",
+    "expected_tool_path": [
+      "check_job"
+    ],
+    "required_behavior": [
+      "Does not call cancel_job",
+      "Only reports status or tells user how to fetch result if complete"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "name": "fal-ai",
+  "version": "0.1.0",
+  "description": "Create images, videos, music, voice and 3D from a prompt, right in chat. fal runs 1,000+ generative models, including GPT Image 2.5, Nano Banana 2.1, FLUX 3, H3 Max, FLUX 3 Max, Seedance 2.5, Kling 3.0, ElevenLabs v4 and Hunyuan 3D: text to image, image editing, text and image to video, lip sync, text to speech, music, sound effects, upscaling and background removal. It picks the right model, shows the price before it runs, and returns the media. Sign in with your fal account, no API key needed.",
+  "author": {
+    "name": "fal.ai",
+    "url": "https://fal.ai"
+  },
+  "homepage": "https://fal.ai",
+  "repository": "https://github.com/fal-ai-community/fal-grok-plugin",
+  "license": "MIT",
+  "keywords": [
+    "fal",
+    "fal.ai",
+    "fal ai",
+    "fal mcp"
+  ],
+  "logo": "assets/fal.png"
+}
