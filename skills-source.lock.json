@@ -1,0 +1,16 @@
+{
+  "repository": "fal-ai-community/skills",
+  "commit": "b83a9ed0273f291c7016119e3f0792d6504639a5",
+  "profile": "grok",
+  "bundle": "hybrid",
+  "entrypoints": [
+    "ecommerce-product-photography",
+    "fal-media",
+    "game-asset-production",
+    "localize-and-repurpose",
+    "product-ad-campaign",
+    "storyboard-to-short-film"
+  ],
+  "registry_sha256": "6168ecf0c4297695d1766effd036b61a180187ed24b1a27c7d76058661b83eb5",
+  "note": "Generated files: edit canonical repository, then rebuild. No releases are published."
+}

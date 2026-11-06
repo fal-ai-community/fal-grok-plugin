@@ -1,2 +1,6 @@
 SUBMISSION.md
 .DS_Store
+
+.venv/
+__pycache__/
+.canonical-source/

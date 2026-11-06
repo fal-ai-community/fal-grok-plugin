@@ -1,0 +1,22 @@
+name: Verify canonical skill bundle
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read source pin
+        id: source
+        run: python -c "import json,os; d=json.load(open('skills-source.lock.json')); open(os.environ['GITHUB_OUTPUT'],'a').write('commit='+d['commit']+'\n')"
+      - uses: actions/checkout@v4
+        with:
+          repository: fal-ai-community/skills
+          ref: ${{ steps.source.outputs.commit }}
+          path: .canonical-source
+      - run: python -m pip install -r .canonical-source/requirements-dev.txt
+      - run: python scripts/sync-skills.py --check --source .canonical-source
