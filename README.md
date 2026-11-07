@@ -2,6 +2,18 @@
 
 Grok Bot, Grok Build and Cursor plugin package for fal.ai. This repository contains only the plugin manifests, the MCP server reference, skills, assets, and review/eval notes. The MCP server implementation lives separately and is referenced by URL.
 
+## Install
+
+For the current public repository version in Cursor:
+
+```text
+/add-plugin https://github.com/fal-ai-community/fal-grok-plugin
+```
+
+The official Cursor/Grok marketplace listing is a separate reviewed distribution.
+Repository releases do not prove that the marketplace update is approved.
+Sign in with your fal account when the MCP connection requests authorization.
+
 ## Contents
 
 - `.grok-plugin/plugin.json` - Grok plugin manifest
@@ -76,7 +88,7 @@ the diff and commit it. Git operations use SSH. The sync script changes only the
 skill payload and its lock; native manifests, marketing copy, connector/MCP
 configuration, icons and evals remain maintained in this package.
 
-See the [installation guide](https://github.com/fal-ai-community/skills/blob/b83a9ed0273f291c7016119e3f0792d6504639a5/docs/install.md)
+See the [installation guide](https://github.com/fal-ai-community/skills/blob/1b9f6e6c973866ff9ae8bb6f8a3d4525a58192ee/docs/install.md)
 for standalone full-library installation and package build options. CI verifies
 every generated skill file against the locked source. Native authentication,
 marketplace installation and paid creative output remain manual checks.
