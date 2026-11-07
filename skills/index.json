@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "name": "ecommerce-product-photography",
+      "description": "Create a consistent fal e-commerce product photo set from real SKU references. Deliver verified hero, detail and lifestyle images with accurate packaging and channel exports.",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "8fce1d1af2d9af0fb3709c0847f8087facbdfab47aa11664022bbbc597236056",
+          "bytes": 3305
+        }
+      ]
+    },
+    {
+      "name": "fal-media",
+      "description": "Generate or process media with connected fal MCP tools. Use for Fal model selection, schemas, pricing, uploads and job recovery; preserve an explicitly chosen provider.",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "44f23a05c766ee8bd4adee2870e65fa0c03edc06db13cdf30057cda8d1295faf",
+          "bytes": 3587
+        }
+      ]
+    },
+    {
+      "name": "game-asset-production",
+      "description": "Produce an engine-ready 2D game asset pack with fal. Deliver transparent sprites, sliced animation frames, backgrounds and an atlas with measured frame geometry.",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ecfadc4cca018232283dad14bef8a5bd1e981765d94435ae225c9c9b31ba7a7d",
+          "bytes": 3600
+        }
+      ]
+    },
+    {
+      "name": "localize-and-repurpose",
+      "description": "Localize and repurpose existing creative content with fal. Deliver translated speech, accurate subtitles and channel cuts while preserving meaning, brand assets and source provenance.",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4546f7bcdf9506d155604aeccbe02105fd6cf0a4efe13b54946e0082698bb8fd",
+          "bytes": 3799
+        }
+      ]
+    },
+    {
+      "name": "product-ad-campaign",
+      "description": "Produce a complete fal product ad campaign from a brief and product references. Deliver reviewed hero art, channel variants, short motion ads and a reusable asset manifest.",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "ca45d892315214935aade664c8504f8d80ed6fc1dc64afef801f952203d24767",
+          "bytes": 3249
+        }
+      ]
+    },
+    {
+      "name": "storyboard-to-short-film",
+      "description": "Turn a storyboard or shot list into a finished fal short film. Preserve character and scene continuity, render each shot, assemble picture and sound, and verify the final cut.",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f25688a16f97da559206a961fe1c358f6ef4a0563b697672d17d5ddd0624e564",
+          "bytes": 3599
+        }
+      ]
+    }
+  ]
+}
